@@ -67,3 +67,18 @@ switch(opcion){
         alert("Tu peso en la tierra es " + (miMasa*gLuna));
 
 }
+
+
+// En Javascript existen otros tipos de valores que son considerados como falsos
+// a demás de booleano 'false', comprobemos esto:
+
+if(!false) console.log("false es falso");
+if(!undefined) console.log("undefined es falso");
+if(!null) console.log("null es falso");
+if(!0) console.log("0 es falso");
+if(!NaN) console.log("NaN (Not a Number) es falso");
+if(!"") console.log("\"\" La cadena vacía es falso");
+
+
+// PARA SABER MÁS SOBRE CONTROL SELECTIVO, REVISA EL SIGUIENTE ENLACE:
+// https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Control_de_flujo_y_manejo_de_errores
