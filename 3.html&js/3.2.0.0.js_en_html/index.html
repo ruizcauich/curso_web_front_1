@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>¿Dónde va JS?</title>
+        <script>
+            // JS puede ir en el <head>
+            // Generemos un número aleatoreo
+            let numero = 1 + Math.random() * 10;
+            numero = Math.floor(numero);
+
+            // Preguntamos si desea jugar
+            let quiereJugar = confirm("¿Deseas jugar?");
+        </script>
+    </head>
+
+    <!-- JS también puede se ejecutado desde algunos atributos de las etiquetas -->
+    <!-- Atributos que representen algun tipo de acción sobre la etiqueta -->
+    <!-- onload, se ejecuta hasta que la ágina esté 100% desplegada -->
+    <body onload="alert('Bienvenido a adivina el número!');">
+        <h1>JS en HTML</h1>
+
+        <script>
+            // Javascript interno pero al final del body
+
+            if (quiereJugar) {
+                let guessed = parseInt(prompt("Escribe un número entre 0 y 100"));
+
+                if (guessed == numero) {
+                    alert("FELICIDADES!!! HAZ GANADO UN MILLON DE DOLARES!");
+                } else {
+                    alert("Uff, intentalo nuevamente!");
+                }
+            } else {
+                alert("Nos vemos pronto");
+            }
+        </script>
+
+        <!-- Script externo -->
+        <!-- 
+            Se pueden usar rutas:
+            RELATIVAS: parten del lugar en donde se encuentra este archivo index.html
+                ../ -> sube un directorio (3.html&js)
+                ../../-> direcotrio raiz en el que tienes el repo, a partir de ahi
+                         puedes acceder a 2.intro_js
+                         
+            ABSOLUTAS: El path completo, en el disco duro, o si se encuentra en un
+                sitio en internet, el dominio y el path en donde se encuentra el script.
+
+         -->
+        <script src="../../2.intro_js/2.3.1.el_puesto_de_helados.js"></script>
+    </body>
+</html>
