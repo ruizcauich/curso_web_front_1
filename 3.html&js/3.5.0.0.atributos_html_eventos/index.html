@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurando colores</title>
+</head>
+<body>
+
+    <h1>Cambiando el color de fondo</h1>
+
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <p>Usa los inputs para configurar el color del canvas</p>
+
+    <!-- Los colores RGB (Red-Green-Blue) toman valores entre 0 y 255-->
+    <!-- Maanejo de eventos en línea (NO LO USES!) -->
+    <input type="number" id="red" min="0" max="255" value="255" onchange="cambiarColor()">
+    <input type="number" id="green" min="0" max="255" value="255">
+    <input type="number" id="blue" min="0" max="255" value="255">
+    <input type="button" id="reset" value="reset">
+    
+    <script src="manejadorDeColores.js"></script>
+</body>
+</html>
