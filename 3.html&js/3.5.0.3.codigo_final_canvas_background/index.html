@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurando colores</title>
+</head>
+<body>
+
+    <h1>Cambiando el color de fondo</h1>
+    <p>
+        Este ejemplo presenta el código final y reducido
+    </p>
+    <input type="checkbox" id="mostrarGuias"> 
+    <label for="mostrarGuias">Mostrar guias del mouse</label>
+    <br>
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <p>Usa los inputs para configurar el color del canvas</p>
+
+    
+    <input type="number" id="red" min="0" max="255" value="255">
+    <input type="number" id="green" min="0" max="255" value="255">
+    <input type="number" id="blue" min="0" max="255" value="255">
+    <input type="button" id="reset" value="reset">
+    
+    <script src="../3.5.0.2.event_objects_mover_texto_guias_mouse/dibujar-lineas.js"></script>
+    <script src="manejadorDeColores.js"></script>
+</body>
+</html>
